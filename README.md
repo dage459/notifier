@@ -65,16 +65,16 @@ export default () => {
 };
 ```
 
-> Possible notifier severities
+> Possible notifier "types"
 
-| Severity | Color         | type    |
-| -------- | ------------- | ------- |
-| default  | white         | ----    |
-| info     | blue          | INFO    |
-| success  | green         | SUCCESS |
-| warning  | orange        | WARNING |
-| error    | red           | ERROR   |
-| dark     | darkslategrey | DARK    |
+| Severity | Color    | type    |
+| -------- | -------- | ------- |
+| default  | white    | ----    |
+| info     | blue     | INFO    |
+| success  | green    | SUCCESS |
+| warning  | orange   | WARNING |
+| error    | red      | ERROR   |
+| dark     | darkgrey | DARK    |
 
 > The durration time is changeable in "Notifier.js" at "handleStartNotifier" funcion
 
