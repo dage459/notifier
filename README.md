@@ -1,4 +1,4 @@
-# Notifier for Raact
+# Notifier for React
 
 ![GitHub](https://img.shields.io/cirrus/github/dage459/notifier/master)
 ![Version](https://img.shields.io/github/package-json/v/dage459/notifier)
