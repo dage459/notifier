@@ -1,0 +1,119 @@
+/* 
+ * Copyright(c) 2020 @dage459
+ * Licensed under the Creative Commons Attribution-NonCommercial-
+ * NoDerivatives 4.0 International Public License
+ * You may obtain a copy of the License at:
+ *    https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+ */
+
+/* 
+  * --------------------------------------------------------------------------------
+  * Description:
+  *        ToDo:
+  * --------------------------------------------------------------------------------
+  */
+
+.notification-wrapper {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 300px;
+  z-index: 2;
+}
+
+.notification-item {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  animation: SlideLeft 0.4s;
+  animation-fill-mode: forwards;
+  width: 300px;
+}
+
+@keyframes SlideLeft {
+  0% {
+    margin-left: 120%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+@keyframes SlideRight {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 120%;
+  }
+}
+
+.notification-item.exit {
+  animation: SlideRight 0.4s;
+  animation-fill-mode: forwards;
+}
+
+.notification-item p {
+  margin: 0;
+  padding: 10px;
+}
+
+.notification-item .bar {
+  height: 5px;
+}
+
+.notification-item.info {
+  background-color: lightskyblue;
+}
+
+.notification-item.info .bar {
+  background-color: lightskyblue;
+  filter: brightness(80%);
+}
+
+.notification-item.success {
+  background-color: limegreen;
+}
+
+.notification-item.success .bar {
+  background-color: limegreen;
+  filter: brightness(80%);
+}
+
+.notification-item.warning {
+  background-color: orange;
+}
+
+.notification-item.warning .bar {
+  background-color: orange;
+  filter: brightness(80%);
+}
+
+.notification-item.error {
+  background-color: red;
+}
+
+.notification-item.error .bar {
+  background-color: red;
+  filter: brightness(80%);
+}
+
+.notification-item.dark {
+  background-color: darkslategrey;
+  color: white;
+}
+
+.notification-item.dark .bar {
+  background-color: darkslategrey;
+  filter: brightness(220%);
+}
+
+.notification-item.default {
+  background-color: white;
+}
+
+.notification-item.default .bar {
+  background-color: white;
+  filter: brightness(80%);
+}
