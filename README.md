@@ -1,10 +1,17 @@
 # Notifier for Raact
 
+![GitHub](https://img.shields.io/cirrus/github/dage459/notifier/master)
+![Version](https://img.shields.io/github/package-json/v/dage459/notifier)
+![Size](https://img.shields.io/github/repo-size/dage459/notifier)
+![Activity](https://img.shields.io/github/release-date/dage459/notifier)
+![Activity](https://img.shields.io/github/last-commit/dage459/notifier)
+![Downloads](https://img.shields.io/github/downloads/dage459/notifier/total)
+
 > Simple Notifier for React
 
 ## Usage
 
-> First install uuid
+> First: install uuid
 
 ```javascript
 npm install uuid
