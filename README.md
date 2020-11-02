@@ -73,7 +73,7 @@ export default () => {
 | info     | blue          | INFO    |
 | success  | green         | SUCCESS |
 | warning  | orange        | WARNING |
-| error    | red           | RED     |
+| error    | red           | ERROR   |
 | dark     | darkslategrey | DARK    |
 
 > The durration time is changeable in "Notifier.js" at "handleStartNotifier" funcion
