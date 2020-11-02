@@ -97,7 +97,7 @@ const handleStartNotifier = () => {
 
 Reach out to me at one of the following places!
 
-- Website at <a href="https://github.com/dage459/notifier" target="_blank">`dave-db.com`</a>
+- Website at <a href="https://github.com/dage459/notifier.git" target="_blank">`dave-db.com`</a>
 
 ---
 
@@ -106,4 +106,4 @@ Reach out to me at one of the following places!
 ![LICENCE](https://img.shields.io/github/license/davedb459/davedb-app)
 
 - **[Apache license](http://www.apache.org/licenses/LICENSE-2.0)**
-- Copyright 2020 © <a href="https://github.com/dage459/notifier" target="_blank">@dage</a>.
+- Copyright 2020 © <a href="https://github.com/dage459/notifier.git" target="_blank">@dage</a>.
