@@ -101,5 +101,5 @@ const handleStartNotifier = () => {
 
 ![LICENCE](https://img.shields.io/github/license/dave459/notifier)
 
-- **[Apache license](http://www.apache.org/licenses/LICENSE-2.0)**
+- **[MIT license](http://www.opensource.org/licenses/mit-license.php)**
 - Copyright 2020 © <a href="https://github.com/dage459/notifier.git" target="_blank">@dage</a>.

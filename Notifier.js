@@ -1,6 +1,7 @@
 /*
  * MIT License
  * Copyright(c) 2020 @dage459
+ *     http://www.opensource.org/licenses/mit-license.php
  */
 
 /*
