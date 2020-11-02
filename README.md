@@ -39,16 +39,15 @@ ReactDOM.render(
 import React from "react";
 import { useNotifier } from "../notifier/Notifier";
 
-// test the notifier
+// test the notifier in a component
 export default () => {
-  // initialize hook
-  const notifier = useNotification();
+  const notifier = useNotifier(); // initialize the notifier hook
   const [inputVal, setInputVal] = React.useState(""); // only needet for testing
 
   const handleNewNotifier = () => {
     notifier({
-      type: "INFO",
-      message: inputVal,
+      type: "INFO", // Available types => "INFO", "SUCCESS", "WARNING", "ERROR", "DARK", "DEFAULT"
+      message: inputVal, // changeable to any value you will use
     });
   };
 

@@ -16,9 +16,9 @@
 import React from "react";
 import { v4 } from "uuid";
 import "./notifier.css";
-const NotificationContext = React.createContext();
+const NotifierContext = React.createContext();
 
-const Notification = (props) => {
+const Notifier = (props) => {
   const [width, setWidth] = React.useState(0);
   const [intervalID, setIntervalID] = React.useState(null);
   const [exit, setExit] = React.useState(false);
@@ -45,7 +45,7 @@ const Notification = (props) => {
     setExit(true);
     setTimeout(() => {
       props.dispatch({
-        type: "REMOVE_NOTIFICATION",
+        type: "REMOVE_NOTIFIER",
         id: props.id,
       });
     }, 400);
@@ -65,7 +65,7 @@ const Notification = (props) => {
     <div
       onMouseEnter={handlePausNotifier}
       onMouseLeave={handleStartNotifier}
-      className={`notification-item ${
+      className={`notifier-item ${
         props.type === "INFO"
           ? "info"
           : props.type === "SUCCESS"
@@ -88,9 +88,9 @@ const Notification = (props) => {
 export default (props) => {
   const [state, dispatch] = React.useReducer((state, action) => {
     switch (action.type) {
-      case "ADD_NOTIFICATION":
+      case "ADD_NOTIFIER":
         return [...state, { ...action.payload }];
-      case "REMOVE_NOTIFICATION":
+      case "REMOVE_NOTIFIER":
         return state.filter((el) => el.id !== action.id);
       default:
         return state;
@@ -98,22 +98,22 @@ export default (props) => {
   }, []);
 
   return (
-    <NotificationContext.Provider value={dispatch}>
-      <div className={"notification-wrapper"}>
+    <NotifierContext.Provider value={dispatch}>
+      <div className={"notifier-wrapper"}>
         {state.map((note) => {
-          return <Notification dispatch={dispatch} key={note.id} {...note} />;
+          return <Notifier dispatch={dispatch} key={note.id} {...note} />;
         })}
       </div>
       {props.children}
-    </NotificationContext.Provider>
+    </NotifierContext.Provider>
   );
 };
 
 export const useNotifier = () => {
-  const dispatch = React.useContext(NotificationContext);
+  const dispatch = React.useContext(NotifierContext);
   return (props) => {
     dispatch({
-      type: "ADD_NOTIFICATION",
+      type: "ADD_NOTIFIER",
       payload: {
         id: v4(),
         ...props,
