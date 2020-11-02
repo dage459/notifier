@@ -1,9 +1,6 @@
 /*
+ * MIT License
  * Copyright(c) 2020 @dage459
- * Licensed under the Creative Commons Attribution-NonCommercial-
- * NoDerivatives 4.0 International Public License
- * You may obtain a copy of the License at:
- *    https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
  */
 
 /*

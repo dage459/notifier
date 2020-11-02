@@ -20,8 +20,8 @@ npm install uuid
 ```javascript
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./components/App";
-import Notifier from "./notifier/Notifier";
+import App from "./App";
+import Notifier from "./components/notifier/Notifier";
 
 ReactDOM.render(
   <Notifier>
@@ -93,21 +93,13 @@ const handleStartNotifier = () => {
 ## FAQ
 
 - **How do I do _specifically_ so and so?**
-  - No problem! Just do this.
-
----
-
-## Support
-
-Reach out to me at one of the following places!
-
-- Website at <a href="https://github.com/dage459/notifier.git" target="_blank">`dave-db.com`</a>
+  - No problem! Just play with it.
 
 ---
 
 ## License
 
-![LICENCE](https://img.shields.io/github/license/davedb459/davedb-app)
+![LICENCE](https://img.shields.io/github/license/dave459/notifier)
 
 - **[Apache license](http://www.apache.org/licenses/LICENSE-2.0)**
 - Copyright 2020 © <a href="https://github.com/dage459/notifier.git" target="_blank">@dage</a>.
